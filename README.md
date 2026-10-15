@@ -3,7 +3,6 @@ Trabalho da disciplina Projeto e Otimização de Algoritmos (PUCRS).
 
 O programa calcula de quantas formas um raio de luz pode atravessar uma pilha de n placas de vidro sofrendo k reflexões.
 ## Para executar
-
 Compile:
 ```
 javac mirrorsPalace.java
