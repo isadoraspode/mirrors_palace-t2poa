@@ -1,9 +1,7 @@
 # Palácio dos Espelhos
-
 Trabalho da disciplina Projeto e Otimização de Algoritmos (PUCRS).
 
 O programa calcula de quantas formas um raio de luz pode atravessar uma pilha de n placas de vidro sofrendo k reflexões.
-
 ## Para executar
 
 Compile:
@@ -11,13 +9,10 @@ Compile:
 javac mirrorsPalace.java
 ```
 Execute passando o número de placas e o número de reflexões:
-
 ```
 java espelhos 6 4
 ```
-
 ## Resultados de 16 combinações de (n, k)
-
 | Placas (n) | Reflexões (k) | Possibilidades |
 |---:|---:|---|
 | 3 | 10 | 144 |
