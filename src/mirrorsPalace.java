@@ -5,16 +5,16 @@ public class mirrorsPalace {
 
     static int n;
     static BigInteger[][][] memo;
-
+ 
     static BigInteger f(int j, boolean desce, int r) {
         if (r < 0) return BigInteger.ZERO;
-
+ 
         if (desce && j == n) return r == 0 ? BigInteger.ONE : BigInteger.ZERO;
         if (!desce && j == 0) return r == 0 ? BigInteger.ONE : BigInteger.ZERO;
-
+ 
         int d = desce ? 0 : 1;
         if (memo[j][d][r] != null) return memo[j][d][r];
-
+ 
         BigInteger res;
         if (desce) {
             res = f(j, false, r - 1).add(f(j + 1, true, r));
@@ -24,13 +24,13 @@ public class mirrorsPalace {
         memo[j][d][r] = res;
         return res;
     }
-
+ 
     public static BigInteger contar(int placas, int k) {
         n = placas;
         memo = new BigInteger[n + 1][2][k + 1];
         return f(0, true, k);
     }
-
+ 
     public static void main(String[] args) {
         int placas, k;
         if (args.length >= 2) {
