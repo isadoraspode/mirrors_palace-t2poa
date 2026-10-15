@@ -24,7 +24,7 @@ public class mirrorsPalace {
         memo[j][d][r] = res;
         return res;
     }
- 
+    // k = n° de reflexões
     public static BigInteger contar(int placas, int k) {
         n = placas;
         memo = new BigInteger[n + 1][2][k + 1];
