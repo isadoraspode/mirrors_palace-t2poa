@@ -7,7 +7,7 @@ Compile:
 ```
 javac mirrorsPalace.java
 ```
-Execute passando o número de placas e o número de reflexões:
+Execute passando o número n de placas e o número k de reflexões:
 ```
 java espelhos 6 4
 ```
